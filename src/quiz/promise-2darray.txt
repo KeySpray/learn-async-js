@@ -1,1 +1,8 @@
 Explain the code execution based on the order of the messages logged in src/quiz/promise-2darray.txt.
+
+1. Sum called and returning from sum printed, indicating sum2dArray called with valid input first
+2. Sum called and rejecting printed, indicating sum2dArray called with invalid input second
+3. returning from sum printed, stemming from second call to sum2dArray with invalid input
+4. BAD INPUT printed, indicating the reject message returned by second call to sum2dArray. Invalid input logic completed asynchronously before valid input
+5. resolving printed, indicating the first (valid) call to sum2dArray finished
+6. 45 printed, indicating the first (valid) call to sum2dArray performed as expected
